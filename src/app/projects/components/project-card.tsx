@@ -21,6 +21,8 @@ export default function ProjectCard({project}: ProjectCardProps) {
         src={project.image}
         alt={`A picture of the project ${project.name}`}
         className={'h-[24.375rem] object-cover object-top'}
+        width={'542'}
+        height={'390'}
       />
       <div className={'flex flex-col px-6 py-4 gap-2'}>
         <h2 className={'font-display italic text-3xl underline'}>{project.name}</h2>
