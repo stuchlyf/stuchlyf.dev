@@ -21,7 +21,18 @@ const poppins = Poppins({
 
 export const metadata = {
   title: 'stuchlyf.',
-} satisfies Metadata
+  description: 'My Portfolio showing off my professional experience, the projects I\'ve worked on and how to contact me.',
+  keywords: ['portfolio', 'stuchlyf', 'florian stuchly', 'stuchly', 'software', 'engineer', 'developer', 'web developer', 'fullstack developer', 'fullstack', 'hof', 'german', 'cv', 'curriculum vitae'],
+  icons: [
+    { url: '/apple-touch-icon.png', sizes: '180x180', rel: 'apple-touch-icon' },
+    { url: '/favicon-32x32.png', sizes: '32x32', rel: 'icon', type: 'image/png' },
+    { url: '/favicon-16x16.png', sizes: '16x16', rel: 'icon', type: 'image/png' },
+    { url: '/safari-pinned-tab.svg', rel: 'mask-icon', color: '#241f25' },
+  ],
+  manifest: '/site.webmanifest',
+  themeColor: '#241f25',
+
+} satisfies Metadata;
 
 export type RootLayoutProps = {
   children: React.ReactNode
