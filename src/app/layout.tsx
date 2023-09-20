@@ -6,6 +6,7 @@ import {clsx} from "clsx";
 import {Header} from "@/components/header";
 import {ThemeProvider} from "@/components/theme-provider";
 import BackgroundCircles from "@/components/background-circles";
+import {Analytics} from "@vercel/analytics/react";
 
 const playfairDisplay = Playfair_Display({
   subsets: ['latin'],
@@ -54,7 +55,8 @@ export default function RootLayout({ children }: RootLayoutProps) {
           <Header />
           {children}
         </ThemeProvider>
-        </body>
+        <Analytics />
+      </body>
     </html>
   )
 }
