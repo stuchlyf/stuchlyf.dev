@@ -3,15 +3,10 @@ import React from "react";
 import Link from "next/link";
 import {ArrowRight, GitBranch} from "lucide-react";
 import {cn} from "@/lib/utils";
+import {Project} from "@/models/project";
 
 export type ProjectCardProps = {
-  project: {
-    name: string;
-    description: string;
-    link: string;
-    image: ImageProps['src'];
-    githubLink?: string;
-  }
+  project: Project
 }
 
 export default function ProjectCard({project}: ProjectCardProps) {
