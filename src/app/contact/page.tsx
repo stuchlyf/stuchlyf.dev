@@ -2,7 +2,7 @@ import {Github, Linkedin, Mail} from "lucide-react";
 import React from "react";
 import Link from "next/link";
 
-export default function Page() {
+export default async function Page() {
   return (
     <main className={'h-full p-16 flex flex-col justify-between font-display italic'}>
       <Link href={'https://github.com/stuchlyf'} className={'flex gap-8 items-center'}>
