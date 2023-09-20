@@ -11,6 +11,7 @@ export type ProjectCardProps = {
 
 export default function ProjectCard({project}: ProjectCardProps) {
   return (
+    // TODO: use grid system instead of flex to ensure the visit link is always at the end of the card even if the description is only one line long
     <div className={'bg-white bg-opacity-5 rounded-2xl border border-white border-opacity-30 h-full w-[34rem] flex flex-col overflow-clip'}>
       <Image
         src={project.image}
