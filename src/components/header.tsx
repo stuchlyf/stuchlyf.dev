@@ -2,7 +2,7 @@ import React from "react";
 import Image from 'next/image';
 import logo from '@/../public/logo.svg';
 import {ModeToggle} from "@/components/mode-toggle";
-import NavLink from "@/components/NavLink";
+import NavLink from "@/components/nav-link";
 
 export function Header() {
   return (
