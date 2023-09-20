@@ -1,18 +1,33 @@
 import ProjectCard from "@/app/projects/components/project-card";
-import noisetoolImage from '@/../public/noisetool.png';
+import projectSchema from "@/models/project";
+import {z} from "zod";
 
-export default function Page() {
+export const revalidate = 86400;
+
+async function getProjects() {
+  try {
+    const response = await fetch('https://api.stuchlyf.dev/v1/projects');
+    const json = await response.json() as unknown;
+
+    return z.array(projectSchema).parse(json);
+  } catch (e) {
+    console.error(e);
+    throw new Error('There was an Error while trying to fetch Projects', { cause: e });
+  }
+}
+
+export default async function Page() {
+  const projects = await getProjects();
+
   return (
     <main className={'h-full p-16'}>
-      <ProjectCard
-        project={{
-          name: 'noisetool.',
-          description: 'A WebApp to enhance you focus by replacing you background noises with generated noise.',
-          githubLink: 'https://github.com/stuchlyf/noisetool..git',
-          link: 'https://noisetool.stuchlyf.dev',
-          image: noisetoolImage
-        }}
-      />
+      <div className={'flex gap-8 overflow-x-auto'}>
+        {projects.map(project => (
+          <div key={project.name} className={'shrink-1 grow-0 basis-0'}>
+            <ProjectCard project={project} />
+          </div>
+        ))}
+      </div>
     </main>
   )
 }
