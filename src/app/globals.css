@@ -76,9 +76,16 @@
 }
 
 .h-safe-screen {
+  height: 100vh;
   height: 100svh;
 }
 
 .min-h-safe-screen {
+  min-height: 100vh;
   min-height: 100svh;
+}
+
+.max-h-safe-screen {
+  max-height: 100vh;
+  max-height: 100svh;
 }

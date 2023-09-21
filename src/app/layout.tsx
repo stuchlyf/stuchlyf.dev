@@ -39,7 +39,12 @@ export type RootLayoutProps = {
   children: React.ReactNode
 }
 
-const bodyClassName = clsx(playfairDisplay.variable, poppins.variable, 'h-safe-screen', 'flex', 'flex-col');
+const bodyClassName = clsx(
+  playfairDisplay.variable,
+  poppins.variable,
+  'h-safe-screen',
+  'max-h-safe-screen',
+);
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
@@ -51,11 +56,13 @@ export default function RootLayout({ children }: RootLayoutProps) {
           enableSystem
           disableTransitionOnChange
         >
-          <BackgroundCircles />
-          <Header />
-          {children}
+          <div className={'h-full grid grid-rows-[auto_1fr]'}>
+            <Header />
+            {children}
+          </div>
         </ThemeProvider>
         <Analytics />
+        <BackgroundCircles />
       </body>
     </html>
   )
