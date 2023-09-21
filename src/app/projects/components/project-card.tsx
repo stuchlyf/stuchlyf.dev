@@ -1,4 +1,4 @@
-import Image, {ImageProps} from "next/image";
+import Image from "next/image";
 import React from "react";
 import Link from "next/link";
 import {ArrowRight, GitBranch} from "lucide-react";
@@ -25,15 +25,33 @@ export default function ProjectCard({project}: ProjectCardProps) {
         <p className={'text-2xl font-light'}>{project.description}</p>
       </div>
       <div className={'flex'}>
-        <Link href={project.link} className={cn('py-6 pl-6 flex gap-4 text-2xl items-center grow hover:bg-white hover:bg-opacity-10', project.githubLink ? undefined : 'pr-6')}>
-          visit page
-          <ArrowRight />
-        </Link>
-        {project.githubLink && (
-          <Link href={project.githubLink} className={'py-6 px-6 hover:bg-white hover:bg-opacity-10 flex items-center'}>
+        {project.githubLink && !project.link ? (
+          <Link href={project.githubLink} className={cn('py-6 px-6 flex gap-4 text-2xl items-center grow hover:bg-white hover:bg-opacity-10')}>
             <GitBranch />
+            visit on github
           </Link>
+        )
+        : project.link && !project.githubLink ? (
+          <Link href={project.link} className={'py-6 px-6 flex gap-4 text-2xl items-center grow hover:bg-white hover:bg-opacity-10'}>
+            visit page
+            <ArrowRight />
+          </Link>
+        )
+        : project.link && project.githubLink ? (
+          <>
+            <Link href={project.link} className={'py-6 pl-6 flex gap-4 text-2xl items-center grow hover:bg-white hover:bg-opacity-10'}>
+              visit page
+              <ArrowRight />
+            </Link>
+            <Link href={project.githubLink} className={'py-6 px-6 hover:bg-white hover:bg-opacity-10 flex items-center'}>
+              <GitBranch />
+            </Link>
+          </>
+        )
+        : (
+          <></>
         )}
+
       </div>
     </div>
   )
