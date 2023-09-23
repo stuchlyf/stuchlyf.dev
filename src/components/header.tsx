@@ -12,7 +12,7 @@ export function Header() {
         />
       </div>
       <nav>
-        <ul className={'flex gap-4 font-semibold text-2xl font-body'}>
+        <ul className={'flex gap-4 font-semibold text-2xl'}>
           <li>
             <NavLink href={'/'}>home</NavLink>
           </li>
