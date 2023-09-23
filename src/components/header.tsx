@@ -1,17 +1,14 @@
 import React from "react";
-import Image from 'next/image';
-import logo from '@/../public/logo.svg';
 import {ModeToggle} from "@/components/mode-toggle";
 import NavLink from "@/components/nav-link";
+import StuchlyfLogoFull from "@/components/svg/stuchlyf-logo-full";
 
 export function Header() {
   return (
     <header className={'flex justify-between p-8 items-center'}>
       <div>
-        <Image
-          src={logo}
-          alt={'stuchlyf. logo'}
-          className={'h-16 w-min'}
+        <StuchlyfLogoFull
+          className={'h-16 text-black dark:text-white'}
         />
       </div>
       <nav>
