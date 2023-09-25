@@ -22,6 +22,10 @@ const config: Config = {
       display: ['var(--font-playfair-display)', ...defaultTheme.fontFamily.serif]
     },
     extend: {
+      backgroundImage: {
+        'background-blobs': 'radial-gradient(41.0625rem 41.0625rem at 95% 10%, rgba(58, 0, 68, 0.47) 0%, rgba(0, 0, 0, 0.00) 100%, rgba(36, 31, 37, 0.00) 100%),' +
+                            'radial-gradient(41.0625rem 41.0625rem at  5% 50%, rgba(67, 0, 68, 0.47) 0%, rgba(0, 0, 0, 0.00) 100%, rgba(36, 31, 37, 0.00) 100%);'
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
