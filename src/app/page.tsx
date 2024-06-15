@@ -13,7 +13,7 @@ export default async function Home() {
         <div className={"flex flex-1 justify-center"}>
           <div
             className={
-              "flex max-w-[44rem] flex-col-reverse items-center gap-8 xl:max-w-[75rem] xl:flex-row xl:items-center xl:justify-between"
+              "flex max-w-[44rem] flex-col-reverse items-center justify-center gap-8 xl:max-w-[75rem] xl:flex-row xl:items-center xl:justify-between"
             }
           >
             <div
