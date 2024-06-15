@@ -1,71 +1,5 @@
-# Created by https://www.toptal.com/developers/gitignore/api/git,vim,node,emacs,linux,macos,react,nextjs,eclipse,windows,netbeans,storybookjs,tortoisegit,visualstudio,jetbrains+all,visualstudiocode,vercel
-# Edit at https://www.toptal.com/developers/gitignore?templates=git,vim,node,emacs,linux,macos,react,nextjs,eclipse,windows,netbeans,storybookjs,tortoisegit,visualstudio,jetbrains+all,visualstudiocode,vercel
-
-### Eclipse ###
-.metadata
-bin/
-tmp/
-*.tmp
-*.bak
-*.swp
-*~.nib
-local.properties
-.settings/
-.loadpath
-.recommenders
-
-# External tool builders
-.externalToolBuilders/
-
-# Locally stored "Eclipse launch configurations"
-*.launch
-
-# PyDev specific (Python IDE for Eclipse)
-*.pydevproject
-
-# CDT-specific (C/C++ Development Tooling)
-.cproject
-
-# CDT- autotools
-.autotools
-
-# Java annotation processor (APT)
-.factorypath
-
-# PDT-specific (PHP Development Tools)
-.buildpath
-
-# sbteclipse plugin
-.target
-
-# Tern plugin
-.tern-project
-
-# TeXlipse plugin
-.texlipse
-
-# STS (Spring Tool Suite)
-.springBeans
-
-# Code Recommenders
-.recommenders/
-
-# Annotation Processing
-.apt_generated/
-.apt_generated_test/
-
-# Scala IDE specific (Scala & Java development for Eclipse)
-.cache-main
-.scala_dependencies
-.worksheet
-
-# Uncomment this line if you wish to ignore the project description file.
-# Typically, this file would be tracked if it contains build/dependency configurations:
-#.project
-
-### Eclipse Patch ###
-# Spring Boot Tooling
-.sts4-cache/
+# Created by https://www.toptal.com/developers/gitignore/api/windows,macos,linux,git,tortoisegit,visualstudio,visualstudiocode,jetbrains+all,netbeans,vim,emacs,node,yarn,nextjs
+# Edit at https://www.toptal.com/developers/gitignore?templates=windows,macos,linux,git,tortoisegit,visualstudio,visualstudiocode,jetbrains+all,netbeans,vim,emacs,node,yarn,nextjs
 
 ### Emacs ###
 # -*- mode: gitignore; -*-
@@ -447,30 +381,9 @@ dist
 # SvelteKit build / generate output
 .svelte-kit
 
-### react ###
-.DS_*
-**/*.backup.*
-**/*.back.*
-
-node_modules
-
-*.sublime*
-
-psd
-thumb
-sketch
-
-### StorybookJs ###
-# gitignore template for the Storybook, UI guide for front apps
-# website: https://storybook.js.org/
-
-storybook-static/
-
 ### TortoiseGit ###
 # Project-level settings
 /.tgitconfig
-
-### Vercel ###
 
 ### Vim ###
 # Swap
@@ -536,6 +449,23 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+### yarn ###
+# https://yarnpkg.com/getting-started/qa#which-files-should-be-gitignored
+
+.yarn/*
+!.yarn/releases
+!.yarn/patches
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+
+# if you are NOT using Zero-installs, then:
+# comment the following lines
+!.yarn/cache
+
+# and uncomment the following lines
+# .pnp.*
 
 ### VisualStudio ###
 ## Ignore Visual Studio temporary files, build results, and
@@ -626,6 +556,7 @@ StyleCopReport.xml
 *.tlb
 *.tli
 *.tlh
+*.tmp
 *.tmp_proj
 *_wpftmp.csproj
 *.tlog
@@ -923,4 +854,4 @@ FodyWeavers.xsd
 ### VisualStudio Patch ###
 # Additional files built by Visual Studio
 
-# End of https://www.toptal.com/developers/gitignore/api/git,vim,node,emacs,linux,macos,react,nextjs,eclipse,windows,netbeans,storybookjs,tortoisegit,visualstudio,jetbrains+all,visualstudiocode,vercel
+# End of https://www.toptal.com/developers/gitignore/api/windows,macos,linux,git,tortoisegit,visualstudio,visualstudiocode,jetbrains+all,netbeans,vim,emacs,node,yarn,nextjs

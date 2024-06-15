@@ -1,14 +1,15 @@
-import {Config} from "tailwindcss";
-import defaultTheme from 'tailwindcss/defaultTheme';
+import type { Config } from "tailwindcss";
+import { fontFamily } from "tailwindcss/defaultTheme";
 
-const config: Config = {
+const config = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
-	],
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
+  ],
+  prefix: "",
   theme: {
     container: {
       center: true,
@@ -17,14 +18,18 @@ const config: Config = {
         "2xl": "1400px",
       },
     },
-    fontFamily: {
-      body: ['var(--font-poppins)', ...defaultTheme.fontFamily.sans],
-      display: ['var(--font-playfair-display)', ...defaultTheme.fontFamily.serif]
-    },
     extend: {
       backgroundImage: {
-        'background-blobs': 'radial-gradient(41.0625rem 41.0625rem at 95% 10%, rgba(58, 0, 68, 0.47) 0%, rgba(0, 0, 0, 0.00) 100%, rgba(36, 31, 37, 0.00) 100%),' +
-                            'radial-gradient(41.0625rem 41.0625rem at  5% 50%, rgba(67, 0, 68, 0.47) 0%, rgba(0, 0, 0, 0.00) 100%, rgba(36, 31, 37, 0.00) 100%);'
+        "background-blobs-small":
+          "radial-gradient(31.0625rem 31.0625rem at 95% 10%, rgba(58, 0, 68, 0.47) 0%, rgba(0, 0, 0, 0.00) 100%, rgba(36, 31, 37, 0.00) 100%)," +
+          "radial-gradient(31.0625rem 31.0625rem at  5% 80%, rgba(67, 0, 68, 0.47) 0%, rgba(0, 0, 0, 0.00) 100%, rgba(36, 31, 37, 0.00) 100%);",
+        "background-blobs-desktop":
+          "radial-gradient(41.0625rem 41.0625rem at 95% 10%, rgba(58, 0, 68, 0.47) 0%, rgba(0, 0, 0, 0.00) 100%, rgba(36, 31, 37, 0.00) 100%)," +
+          "radial-gradient(41.0625rem 41.0625rem at  5% 50%, rgba(67, 0, 68, 0.47) 0%, rgba(0, 0, 0, 0.00) 100%, rgba(36, 31, 37, 0.00) 100%);",
+      },
+      fontFamily: {
+        body: ["var(--font-body)", ...fontFamily.sans],
+        display: ["var(--font-display)", ...fontFamily.serif],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -68,12 +73,12 @@ const config: Config = {
       },
       keyframes: {
         "accordion-down": {
-          from: { height: '0' },
+          from: { height: "0" },
           to: { height: "var(--radix-accordion-content-height)" },
         },
         "accordion-up": {
           from: { height: "var(--radix-accordion-content-height)" },
-          to: { height: '0' },
+          to: { height: "0" },
         },
       },
       animation: {
@@ -82,7 +87,7 @@ const config: Config = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
-};
+  plugins: [require("tailwindcss-animate"), require("@tailwindcss/typography")],
+} satisfies Config;
 
 export default config;

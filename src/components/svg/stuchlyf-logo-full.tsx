@@ -1,5 +1,4 @@
-import * as React from "react";
-import type { SVGProps } from "react";
+import React, { type SVGProps } from "react";
 
 const StuchlyfLogoFull = (props: SVGProps<SVGSVGElement>) => (
   <svg fill="none" viewBox="0 0 479 177" {...props}>
