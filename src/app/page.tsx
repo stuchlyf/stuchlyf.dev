@@ -87,28 +87,29 @@ export default async function Home() {
         <div className={"prose prose-neutral dark:prose-invert lg:prose-xl"}>
           <h1>What are my skills?</h1>
           <p className={"lead"}>
-            tl;dr: for backend I'm using Java with Spring Boot and for frontend
-            TypeScript with React/Next.js.
+            tl;dr: for backend I&apos;m using Java with Spring Boot and for
+            frontend TypeScript with React/Next.js.
           </p>
           <p>
             Throughout the years I was able to learn many technologies. Here are
-            the ones I'm most confident in working with:
+            the ones I&apos;m most confident in working with:
           </p>
           <h2>Backend</h2>
           <p className={"lead"}>
             I might have started with frontend development but since quite some
-            time now I've found my passion: Backend Engineering.
+            time now I&apos;ve found my passion: Backend Engineering.
           </p>
           <p>
-            I've tried many new technologies in this field but I've got stuck
-            with Java and Spring Boot. In my opinion it's a easy to learn
-            framework and pretty performant. I now have about 4 years of
-            experience with this stack.
+            I&apos;ve tried many new technologies in this field but I&apos;ve
+            got stuck with Java and Spring Boot. In my opinion it&apos;s a easy
+            to learn framework and pretty performant. I now have about 4 years
+            of experience with this stack.
           </p>
           <p>
-            For more resource sensitive tasks I've chosen to learn Rust. It's a
-            very low level language when you compare it to Java, but since it
-            has a borrow checker it's much easier to learn than C/C++.
+            For more resource sensitive tasks I&apos;ve chosen to learn Rust.
+            It&apos;s a very low level language when you compare it to Java, but
+            since it has a borrow checker it&apos;s much easier to learn than
+            C/C++.
           </p>
           <p>
             For small, personal and simple projects I usually use Next.js as my
@@ -118,36 +119,37 @@ export default async function Home() {
           </p>
           <h2>Frontend</h2>
           <p>
-            I've started with plain HTML, CSS & JavaScript as many developers do
-            when trying to first time program something.
+            I&apos;ve started with plain HTML, CSS & JavaScript as many
+            developers do when trying to first time program something.
           </p>
           <p>
-            After a while I've started to use the Framework React and never left
-            the framework. It just makes development of frontend applications
-            easy. But now I usually use Next.js since it makes the creating a
-            small backend much easier.
+            After a while I&apos;ve started to use the Framework React and never
+            left the framework. It just makes development of frontend
+            applications easy. But now I usually use Next.js since it makes the
+            creating a small backend much easier.
           </p>
           <p>
             During my apprenticeship I was also able to get some experience with
-            Angular. But after a few times of working with it I've realized that
-            it's definitely not my preferred frontend framework.
+            Angular. But after a few times of working with it I&apos;ve realized
+            that it&apos;s definitely not my preferred frontend framework.
           </p>
           <h2>Other</h2>
           <p>
-            I've also had to get to know many databases by now. Professionally
-            I've worked with OracleDB and Apache Cassandra, but on my side
-            projects I usually use MySQL or PostgreSQL.
+            I&apos;ve also had to get to know many databases by now.
+            Professionally I&apos;ve worked with OracleDB and Apache Cassandra,
+            but on my side projects I usually use MySQL or PostgreSQL.
           </p>
           <p>
             Since I mostly try to architect my projects as a microservices
-            architecture I've also had my encounters with Kafka and RabbitMQ for
-            asynchronous processing of messages and event driven architectures.
+            architecture I&apos;ve also had my encounters with Kafka and
+            RabbitMQ for asynchronous processing of messages and event driven
+            architectures.
           </p>
           <p>
-            Lastly and probably the newest topic are AIs and LLMs. I've also
-            already gotten some experience with those. I've started to use the
-            new Spring AI module for embedding texts into a vector database and
-            using this as a knowledge base for a chatbot.
+            Lastly and probably the newest topic are AIs and LLMs. I&apos;ve
+            also already gotten some experience with those. I&apos;ve started to
+            use the new Spring AI module for embedding texts into a vector
+            database and using this as a knowledge base for a chatbot.
           </p>
         </div>
       </section>
